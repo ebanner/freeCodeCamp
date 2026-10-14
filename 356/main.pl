@@ -12,6 +12,7 @@ magic_square(Rows) :-
 
   maplist(T/[Row]>>sum(Row, #=, T), Rows),
   maplist(T/[Col]>>sum(Col, #=, T), Cols),
+
   sum([A, E, I], #=, T),
   sum([C, E, G], #=, T),
 
