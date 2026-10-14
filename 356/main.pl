@@ -8,6 +8,7 @@ magic_square(Rows) :-
   append(Rows, Vals),
   Vals ins 1..50,
   all_distinct(Vals),
+
   transpose(Rows, Cols),
 
   maplist(T/[Row]>>sum(Row, #=, T), Rows),
