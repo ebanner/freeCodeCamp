@@ -1,8 +1,7 @@
 cell_phone([Row, Col], Loc) :-
-  Up is Row - 1,
-  Right is Col + 1,
-  Down is Row + 1,
-  Left is Col + 1,
+                   Up is Row - 1,
+  Left is Col - 1,                  Right is Col + 1,
+                   Down is Row + 1,
 
   member(
     Loc,
