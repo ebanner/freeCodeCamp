@@ -7,14 +7,9 @@ cell_phone([Row, Col], Loc) :-
   member(
     Loc,
     [
-      [Up, Col],     % N
-      [Up, Right],   % NE
-      [Row, Right],  % E
-      [Down, Right], % SE
-      [Down, Col],   % S
-      [Down, Left],  % SW
-      [Row, Left],   % W
-      [Up, Left]     % NW
+      [Up, Left],   [Up, Col],   [Up, Right],
+      [Row, Left]                [Row, Right],  % E
+      [Down, Left], [Down, Col], [Down, Right],
     ]
   ).
 
